@@ -1,0 +1,45 @@
+{
+    "musicData": [
+      {
+        "name":"林俊杰———小酒窝",
+        "src":"http://www.daiwei.org/vue/music/%E6%9E%97%E4%BF%8A%E6%9D%B0,%E8%94%A1%E5%8D%93%E5%A6%8D%20-%20%E5%B0%8F%E9%85%92%E7%AA%9D.mp3",
+        "musicImgSrc":"http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg"
+      },
+      {
+      "name":"林俊杰——一千年以后",
+      "src": "http://www.daiwei.org/vue/music/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E4%B8%80%E5%8D%83%E5%B9%B4%E4%BB%A5%E5%90%8E.mp3",
+      "musicImgSrc": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg"
+      },
+      {
+        "name":"林俊杰——江南",
+        "src":"http://www.daiwei.org/vue/music/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E6%B1%9F%E5%8D%97.mp3",
+        "musicImgSrc":"http://oiq8j9er1.bkt.clouddn.com/music_%E6%B1%9F%E5%8D%97.jpg"
+      },
+      {
+        "name":"周杰伦———告白气球",
+        "src":"http://www.daiwei.org/vue/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E5%91%8A%E7%99%BD%E6%B0%94%E7%90%83.mp3",
+        "musicImgSrc":"http://www.daiwei.org/index/music/musicImg/周杰伦-告白气球.jpg"
+      },
+      {
+        "name":"许嵩——幻听",
+        "src":"http://www.daiwei.org/vue/music/%E8%AE%B8%E5%B5%A9%20-%20%E5%B9%BB%E5%90%AC.mp3",
+        "musicImgSrc":"http://oiq8j9er1.bkt.clouddn.com/music_%E6%A2%A6%E6%B8%B8%E8%AE%B0.jpg"
+      },
+      {
+        "name":"陈一发儿——童话镇",
+        "src":"http://www.daiwei.org/vue/music/%E9%99%88%E4%B8%80%E5%8F%91%E5%84%BF%20-%20%E7%AB%A5%E8%AF%9D%E9%95%87.mp3",
+        "musicImgSrc":"http://oiq8j9er1.bkt.clouddn.com/music_%E7%AB%A5%E8%AF%9D%E9%95%87.jpg"
+      },
+      {
+        "name":"古巨基——爱与诚",
+        "src":"http://www.daiwei.org/vue/music/%E5%8F%A4%E5%B7%A8%E5%9F%BA%20-%20%E7%88%B1%E4%B8%8E%E8%AF%9A.mp3",
+        "musicImgSrc":"http://oiq8j9er1.bkt.clouddn.com/music_%E7%88%B1%E4%B8%8E%E8%AF%9A.jpg"
+      },
+      {
+        "name":"王力宏——你的爱",
+        "src":"http://www.daiwei.org/vue/music/%E7%8E%8B%E5%8A%9B%E5%AE%8F%20-%20%E4%BD%A0%E7%9A%84%E7%88%B1.mp3",
+        "musicImgSrc":"http://www.daiwei.org/index/music/musicImg/王力宏-你的爱.jpg"
+      }
+    ]
+  }
+  
