@@ -18,7 +18,7 @@
     </transition>
     <audio v-bind:src="audio.src || (musicData[0]&&musicData[0].src)" v-bind:autoplay="isPlaying" ref="audio" ></audio>
     <!-- 关于界面 -->
-    <About v-if="isShowAbout"></About>
+    <!-- <About v-if="isShowAbout"></About> -->
   </div>
 </template>
 
@@ -43,9 +43,7 @@ export default {
   mounted() {
     this.$store.commit('findDOM',{name: 'audio',dom:this.$refs.audio});
     this.$refs.audio.addEventListener('ended',() =>{this.next();});
-    this.$refs.audio.addEventListener('error',() =>{
-      this.next();
-    });
+    this.$refs.audio.addEventListener('error',() =>{this.next();});
   },
   computed: {
     isShowAsideMenu() {
@@ -71,6 +69,15 @@ export default {
     },
     musicData() {
       return this.$store.state.musicData
+    }
+  },
+  data() {
+    return{}
+  },
+  methods: {
+    next() {
+      this.audio.index ===this.musicData.length-1?0:(++this.audio.index);
+      this.$store.commit('toggleMusic',this.audio.index);
     }
   }
 }

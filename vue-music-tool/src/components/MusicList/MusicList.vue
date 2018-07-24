@@ -18,7 +18,7 @@ export default {
         this.$store.commit('showMiniMusic',true);
     },
     mounted(){
-        this.$store.commit('changeLinkBorderIndex',1);
+        this.$store.commit('changeLinkBorderIndex');
     },
     computed: {
         musicData(){
@@ -33,10 +33,10 @@ export default {
     },
     watch: {
         musicData: {
-            handler(val,oldval) {
+            handler(val,oldval) {    //代表在wacth里声明了musicData这个方法之后立即先去执行handler方法
                 localStorage.music = JSON.stringify(val);
             },
-            deep:true
+            deep:true  //深度监听
         }
     },
     data() {

@@ -21,7 +21,7 @@ const store = new Vuex.Store({
     skinColor:localStorage.skinColor || 'B72712',
     isShowIndex: true,
     isPlaying:false,
-    isAnimation: false,
+    // isAnimation: false,
     isShowAsideMenu:false,
     isShowMiniMusic: false,
     isShowAbout: false,
