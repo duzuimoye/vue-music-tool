@@ -8,7 +8,7 @@
       </div>
 
       <div @click="isShowMusicList=false" class="title">
-        <div class="name">{{audio.name || (musicData[0]&&musicData[0].name) || 'Powered by microzz.com'}}</div>
+        <div class="name">{{audio.name || (musicData[0]&&musicData[0].name)}}</div>
       </div>
 
       <div class="list">
@@ -27,9 +27,9 @@
         </div>
       </transition>
 
-      <img @click.stop.prevent="isShowSkinColors=false;isShowMusicList=false" :src="audio.musicImgSrc || (musicData[0]&&musicData[0].musicImgSrc) || defaultImg" alt="microzz.com">
+      <img @click.stop.prevent="isShowSkinColors=false;isShowMusicList=false" :src="audio.musicImgSrc || (musicData[0]&&musicData[0].musicImgSrc) || defaultImg" alt="">
       <div @click.stop.prevent="isShowSkinColors=false;isShowMusicList=false" class="img">
-        <img :src="audio.musicImgSrc || (musicData[0]&&musicData[0].musicImgSrc) || defaultImg" alt="microzz.com">
+        <img :src="audio.musicImgSrc || (musicData[0]&&musicData[0].musicImgSrc) || defaultImg" alt="">
       </div>
       <div class="progress">
         <div class="start-time">{{transformTime(now)}}</div>

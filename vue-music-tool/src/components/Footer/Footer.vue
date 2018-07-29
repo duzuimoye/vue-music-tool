@@ -4,10 +4,10 @@
     <div v-show="isShowMiniMusic" :style="{backgroundColor: skinColor}" class="footer">
       <div class="mini-music">
         <div class="music-img">
-          <img @click="showPlay" ref="img" v-bind:src="audio.musicImgSrc || (musicData[0]&&musicData[0].musicImgSrc) || defaultImg" alt="microzz.com">
+          <img @click="showPlay" ref="img" v-bind:src="audio.musicImgSrc || (musicData[0]&&musicData[0].musicImgSrc)" alt="">
         </div>
         <div class="music-name">
-          <p @click="showPlay">{{audio.name || (musicData[0]&&musicData[0].name) || 'Powered by microzz.com'}}</p>
+          <p @click="showPlay">{{audio.name || (musicData[0]&&musicData[0].name)}}</p>
           <div class="progress">
             <span class="start">{{transformTime(now)}}</span>
             <div @click="changeTime($event)" @touchmove="touchMove($event)" @touchend="touchEnd($event)" ref="progressBar" class="progress-bar">
@@ -74,7 +74,7 @@ export default {
       now: 0,
       nativeAudio: {},
       totalTime: '0:00',
-      defaultImg: 'https://microzz.com/img/avatar.jpg'
+      defaultImg: ''
     }
   },
   methods: {
@@ -91,7 +91,7 @@ export default {
     },
     changeTime(event) {
       let progressBar = this.$refs.progressBar;
-      let coordStart = progressBar.getBoundingClientRect().left;
+      let coordStart = progressBar.getBoundingClientRect().left;  //getBoundingClientRect()方法返回元素的大小及其相对于视口的位置
       let coordEnd = event.pageX;
       this.nativeAudio.currentTime = (coordEnd - coordStart) / progressBar.offsetWidth * this.nativeAudio.duration;
       this.now = this.nativeAudio.currentTime;
@@ -102,7 +102,7 @@ export default {
       let progressBar = this.$refs.progressBar;
       let coordStart = progressBar.getBoundingClientRect().left;
       let coordEnd = event.touches[0].pageX;
-      this.$refs.now.style.width = ((coordEnd - coordStart) / progressBar.offsetWidth).toFixed(3) * 100 + '%';
+      this.$refs.now.style.width = ((coordEnd - coordStart) / progressBar.offsetWidth).toFixed(3) * 100 + '%';  //toFixed(3)保留小数点后3位
     },
     touchEnd(event) {
       this.nativeAudio.currentTime = this.$refs.now.style.width.replace('%', '')/100 * this.nativeAudio.duration;
